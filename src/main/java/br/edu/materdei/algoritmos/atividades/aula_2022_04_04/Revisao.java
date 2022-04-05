@@ -35,8 +35,8 @@ public class Revisao {
             } else if (comando.equals("DELETE")) {
                 System.out.println("Remove alguma coisa");
             }
-        }
-
+        }      
+        
     }
 
 }
