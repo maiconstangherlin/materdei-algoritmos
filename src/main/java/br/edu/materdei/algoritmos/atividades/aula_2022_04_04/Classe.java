@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Classe {
 
+    /*
     public static void main(String[] args) {
         var scan = new Scanner(System.in);
         
@@ -20,5 +21,24 @@ public class Classe {
         }
         
     }
+     */
+    public static void main(String[] args) {
+        int index = 0;
+        while (index < 10) {
+            System.out.println("Imprimindo o nro: " + index);
+            index++;
+        }
+        
+        index = 10;
 
+        
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Imprimindo o nro: " + i);
+        }
+
+        
+        
+        
+        
+    }
 }
