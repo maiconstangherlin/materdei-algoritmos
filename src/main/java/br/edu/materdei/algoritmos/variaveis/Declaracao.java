@@ -6,10 +6,7 @@ public class Declaracao {
         
         // Sintaxe de declaração recebendo um valor
         // tipo | nome = valor;
-        int numero = 1;         
-        
-        
-        
+        int numero = 1;       
         
         // Sintaxe de declaração sem passar valor inicial
         // tipo | nome;
