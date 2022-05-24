@@ -5,25 +5,16 @@ import java.util.Random;
 public class Correcao_Atividade {
 
     public static void main(String[] args) {
-
         int[][] vetor = criarVetor();
-        
-        System.out.println("");
-        
-        int soma;     
-        for (int i = 0; i < vetor.length; i++) {
-            soma = 0;            
-            for (int j = 0; j < vetor[i].length; j++) {
-                soma += vetor[i][j];                
-            }
-            System.out.println("Soma da linha " + i + " = " + soma);
-        }        
-        
-        
+
+        System.out.println();
+
+        somarLinhasVetor(vetor);
+        somarColunasVetor(vetor);
     }
 
     private static int[][] criarVetor() {
-        int[][] numeros = new int[5][5];
+        int[][] numeros = new int[3][3];
 
         Random random = new Random();
 
@@ -38,4 +29,26 @@ public class Correcao_Atividade {
         return numeros;
     }
 
+    private static void somarLinhasVetor(int[][] vetor) {
+        int soma;
+        for (int row = 0; row < vetor.length; row++) {
+            soma = 0;
+            for (int col = 0; col < vetor[row].length; col++) {
+                soma += vetor[row][col];
+            }
+            System.out.println("Soma da linha " + row + " = " + soma);
+        }
+    }
+
+    private static void somarColunasVetor(int[][] vetor) {
+        int soma;
+        for (int col = 0; col < vetor.length; col++) {
+            soma = 0;
+            for (int row = 0; row < vetor.length; row++) {
+                soma += vetor[row][col];
+            }
+            System.out.println("Soma da coluna " + col + " = " + soma);
+        }
+
+    }
 }
