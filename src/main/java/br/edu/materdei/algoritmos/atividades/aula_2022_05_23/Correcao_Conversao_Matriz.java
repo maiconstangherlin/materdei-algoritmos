@@ -11,8 +11,8 @@ public class Correcao_Conversao_Matriz {
         row = Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade de linhas:"));
         col = Integer.parseInt(JOptionPane.showInputDialog("Informe a quantidade de colunas:"));
 
-        String[][] matriz = criarMatrizPrincipal();
-
+        String[][] matriz = criarMatrizPrincipal();                
+        
         converterMatriz(matriz);
     }
 
